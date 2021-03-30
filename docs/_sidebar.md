@@ -1,5 +1,5 @@
 - UI5
-  - [ESLint](ui5/eslint.md)
+  - [Guidelines](ui5/guidelines.md)
 
 - CAP
   - [Vorlagen](cap/templates.md)
