@@ -1,7 +1,3 @@
-# Headline
+# Agilita Guides
 
-## Header <!-- {docsify-ignore} -->
-
-> An awesome project.
-
-## Header 2
+fasdfasf

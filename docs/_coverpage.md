@@ -6,4 +6,4 @@
 - No statically built html files
 - Multiple themes
 
-[Get Started](#docsify)
+[Get Started](#agilita-guides)
