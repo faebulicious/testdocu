@@ -17,6 +17,7 @@
     }
     h1, h2, h3, h4, h5, h6 {
       font-family: Roboto;
+      font-weight: normal;
     }
 
     aside.sidebar {
@@ -47,24 +48,96 @@
     }
 
     .markdown-section blockquote {
-      background-color: #f8f8f8;
+      background-color: rgba(255,229,100,.3);
       padding-top: .1px;
       padding-bottom: .1px;
-      border-left-color: #aaa;
+      border-left: 8px solid #ffe564;
     }
 
     .markdown-section blockquote p {
       font-weight: normal;
     }
+
+    .sidebar>h1 {
+      text-align: left;
+      margin-left: 15px;
+    }
+
+    .sidebar {
+      padding-top: 20px;
+      width: 360px;
+    }
+
+    body.close .sidebar {
+      transform: translateX(-360px);
+    }
+
+    .sidebar-toggle {
+      display: none;
+    }
+
+    .sidebar li {
+      margin: 0px;
+    }
+
+    .sidebar ul li a {
+      font-size: 1.3rem;
+      padding: 10px;
+      text-decoration: none !important;
+    }
+
+    .sidebar ul.app-sub-sidebar li a {
+      font-size: 1.2rem;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .sidebar ul li a:hover,
+    .sidebar ul li.active>a {
+      background-color: #eaeaea;
+    }
+
+    .hamburger {
+      position: fixed;
+      top: 5px;
+      left: 285px;
+      padding: 15px !important;
+      border-radius: 99px;
+      transition: transform .25s ease-out;
+    }
+
+    body.close .hamburger {
+      transform: translateX(-265px);
+      box-shadow: 3px 3px 5px rgb(0 0 0 / 20%);
+    }
+
+    
   </style>
+  <link href="_resources/hamburgers.css" rel="stylesheet">
 </head>
 <body>
   <div id="app"></div>
+  <button class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+  <script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    // On click
+    hamburger.addEventListener("click", function() {
+      // Toggle class "is-active"
+      hamburger.classList.toggle("is-active");
+      document.body.classList.toggle("close");
+      // Do something else, like open/close menu
+    });
+  </script>
   <script>
     window.$docsify = {
       loadSidebar: true,
-      loadNavbar: true,
+      //loadNavbar: true,
       maxLevel: 4,
       subMaxLevel: 2,
       logo: '/_resources/agilita.svg',
