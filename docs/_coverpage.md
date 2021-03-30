@@ -1,4 +1,4 @@
-# docsify <small>3.5</small>
+# Agilita Guidelines
 
 > A magical documentation site generator.
 
@@ -6,5 +6,4 @@
 - No statically built html files
 - Multiple themes
 
-[GitHub](https://github.com/docsifyjs/docsify/)
 [Get Started](#docsify)
