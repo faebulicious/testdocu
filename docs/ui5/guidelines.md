@@ -77,7 +77,8 @@ Die Konfiguration erfolgt in der Datei `.eslintrc`. Diese Datei kann im Projekt 
     },
     "ignorePatterns": [ 
         "test/*", 
-        "dist/*"
+        "dist/*",
+        "localService/*"
     ] 
 }
 ```

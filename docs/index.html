@@ -66,6 +66,7 @@
     .sidebar {
       padding-top: 20px;
       width: 360px;
+      padding-right: 20px;
     }
 
     body.close .sidebar {
@@ -80,21 +81,30 @@
       margin: 0px;
     }
 
+    .sidebar>.sidebar-nav>ul>li {
+      border-top: 1px solid #ccc;
+    }
+
     .sidebar ul li a {
-      font-size: 1.3rem;
-      padding: 10px;
+      font-size: 1.1rem;
+      padding: 7px 11px;
       text-decoration: none !important;
     }
 
-    .sidebar ul.app-sub-sidebar li a {
-      font-size: 1.2rem;
-      padding-top: 5px;
-      padding-bottom: 5px;
+    .sidebar ul ul li a {
+      font-size: 1.0rem;
+      padding: 2px 0px 2px 11px;
     }
 
     .sidebar ul li a:hover,
     .sidebar ul li.active>a {
       background-color: #eaeaea;
+    }
+
+    .sidebar ul li.active>a {
+      font-weight: normal;
+      text-shadow: #ccc 0 0 3px;
+      border-right: none;
     }
 
     .hamburger {
@@ -143,9 +153,7 @@
       logo: '/_resources/agilita.svg',
       name: 'Agilita',
       themeColor: '#AB1B26',
-      /*plugins: [
-        EditOnGithubPlugin.create('https://github.com/faebulicious/testdocu/blob/main/docs')
-      ],*/
+      auto2top: true,
       plugins: [
         function (hook, vm) {
           hook.beforeEach(function (html) {

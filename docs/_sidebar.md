@@ -1,6 +1,2 @@
-- UI5
-  - [Guidelines](ui5/guidelines.md)
-  - [Git Integration](ui5/gitintegration.md)
-- CAP
-  - [Vorlagen](cap/templates.md)
-  - [Dateistruktur](cap/filestructure.md)
+- [UI5](ui5/intro.md)
+- [CAP](cap/intro.md)
