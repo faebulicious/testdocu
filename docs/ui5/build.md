@@ -1,14 +1,18 @@
 # Build
 
-Durch das Builden einer App wird diese für den produktiven Einsatz vorbereitet und optimiert. Voraussetzung für das Builden von Apps sind die `UI5 Tools` und entsprechenden Konfigurationsdateien.
+Durch das Builden einer App wird diese für den produktiven Einsatz vorbereitet und optimiert. Voraussetzung für das Builden von Apps sind die `UI5 Tools` und entsprechende Konfigurationsdateien.
 
 ```bash
 npm install @ui5/cli --save-dev
 ```
 
-## Standalone 
+Der Buildprozess hängt im Wesentlichen davon ab, wo und wie die gebildeten Artifakte verwendet werden:
 
-Standalone Apps werden normalerweise mit Hilfe des `Yeoman`-Generators oder anhand einer Vorlage angelegt. Die notwendingen Abhängigkeiten sind bereits in der `package.json` beschrieben und die notwendige Konfiguration ist bereits in der Datei `ui5.yaml` abgelegt.
+- Standalone - Die Anwendung wird für die Produktion vorbereitet und die gebildeten Artifakte im `/dist` Verzeichnis abgelegt
+- [MTA](#mta) - Die Anwendung wird als Teil einer Multitarget-Anwendung deployed
+- [MTA Update](#mta-update) - Eine bereits als MTA deployte Anwendung wird nachträglich nochmals ausserhalb der MTA aktualisiert
+
+Grundsätzlich sollen sämtliche UI5 Apps über die aktuellen Generatoren erzeugt werden. Damit werden diese normalerweise bereits für das Deployment als Standalone vorbereitet. Das Build mit dem Befehl `ui5 build` erzeugt dabei die notwendigen Artifakte.
 
 ## MTA
 

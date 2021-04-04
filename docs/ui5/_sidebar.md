@@ -1,6 +1,6 @@
 - [UI5](ui5/intro.md)
-  - [Guidelines](ui5/guidelines.md)
-  - [Git Integration](ui5/gitintegration.md)
+  - [Coding Guidelines](ui5/guidelines.md)
+  - [Auto-Formatierung mit Git](ui5/gitintegration.md)
   - [Pfadauflösung](ui5/pathresolve.md)
   - [Build](ui5/build.md)  
   - [Template](ui5/template.md)  
