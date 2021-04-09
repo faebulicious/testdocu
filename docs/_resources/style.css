@@ -1,0 +1,108 @@
+body {
+  font-family: 'Open Sans';
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto;
+  font-weight: normal;
+}
+
+aside.sidebar {
+  background-color: #fbfbfb;
+  box-shadow: 2px 19px 26px -21px;
+  border: none;
+}
+
+.sidebar-toggle {
+  top: 0;
+  bottom: auto;
+  background: none;
+}
+
+.sidebar-nav li p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app-sub-sidebar li:before {
+  content: "";
+}
+
+.markdown-section pre>code {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.markdown-section blockquote {
+  background-color: rgba(255,229,100,.3);
+  padding-top: .1px;
+  padding-bottom: .1px;
+  border-left: 8px solid #ffe564;
+}
+
+.markdown-section blockquote p {
+  font-weight: normal;
+}
+
+.sidebar>h1 {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.sidebar {
+  padding-top: 20px;
+  width: 360px;
+  padding-right: 20px;
+}
+
+body.close .sidebar {
+  transform: translateX(-360px);
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+.sidebar li {
+  margin: 0px;
+}
+
+.sidebar>.sidebar-nav>ul>li {
+  border-top: 1px solid #ccc;
+}
+
+.sidebar ul li a {
+  font-size: 1.1rem;
+  padding: 7px 11px;
+  text-decoration: none !important;
+}
+
+.sidebar ul ul li a {
+  font-size: 1.0rem;
+  padding: 2px 0px 2px 11px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active>a {
+  background-color: #eaeaea;
+}
+
+.sidebar ul li.active>a {
+  font-weight: normal;
+  text-shadow: #ccc 0 0 3px;
+  border-right: none;
+}
+
+.hamburger {
+  position: fixed;
+  top: 5px;
+  left: 285px;
+  padding: 15px !important;
+  border-radius: 99px;
+  transition: transform .25s ease-out;
+}
+
+body.close .hamburger {
+  transform: translateX(-265px);
+  box-shadow: 3px 3px 5px rgb(0 0 0 / 20%);
+}

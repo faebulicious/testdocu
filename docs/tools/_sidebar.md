@@ -1,4 +1,6 @@
 - [UI5](ui5/intro.md)
 - [CAP](cap/intro.md)
 - [Tools](tools/intro.md)
+  - [Prettier](tools/prettier.md)
+  - [ESLint](tools/eslint.md)
 - [Github](git/intro.md)

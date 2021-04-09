@@ -16,7 +16,7 @@ Grundsätzlich sollen sämtliche UI5 Apps über die aktuellen Generatoren erzeug
 
 ## MTA
 
-Wird eine App als Teil einer Multitarget-App (MTA) deployed, wird ein abweichender Build Prozess benötigt, da die vorbereiteten Artifakte in einem Zip-Archiv abgelegt und in das HTML5 Repository hochgeladen werden muss.
+Wird eine App als Teil einer Multitarget-App (MTA) deployed, wird ein abweichender Build Prozess benötigt, da die vorbereiteten Artifakte in ein Zip-Archiv gepackt und in das HTML5 Repository hochgeladen werden muss.
 
 Für den Build Prozess werden weitere `npm` Packete benötigt.
 

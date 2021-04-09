@@ -2,3 +2,4 @@
 - [CAP](cap/intro.md)
 - [Tools](tools/intro.md)
 - [Github](git/intro.md)
+  - [Prettier](git/prettier.md)
