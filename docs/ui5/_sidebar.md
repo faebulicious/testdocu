@@ -1,5 +1,6 @@
 - [UI5](#)
   - [Einleitung](ui5/intro.md)
+  - [Formattierung](ui5/prettier.md)
   - [Code Analyse](ui5/eslint.md)
   - [Transkompilierung](ui5/babel.md)
   - [Übersetzungen](ui5/i18n.md)
