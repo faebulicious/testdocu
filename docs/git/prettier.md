@@ -23,6 +23,8 @@ npx husky install
 npx husky add .husky/pre-commit "npx pretty-quick --staged"
 ```
 
+> Beim Hinzufügen des pre-commit Hooks muss dieser mit der Meldung `husky - created ...` quittiert werden. Ist dies nicht der Fall und es erscheint stattdessen eine Meldung wie husky zu verwenden ist, muss [npm aktualisiert](https://docs.npmjs.com/try-the-latest-stable-version-of-npm) werden.
+
 Beim Commiten werden fortan sätmliche relevanten geänderten Dateien mit `Prettier` automatisch formatiert, was auch in der Konsole sichtbar ist.
 
 ```
